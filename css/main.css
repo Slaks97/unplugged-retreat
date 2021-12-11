@@ -97,6 +97,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
 }
 
 ul,
@@ -112,12 +113,14 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: 500;
   margin: 20px 0;
 }
 
@@ -149,7 +152,7 @@ figure {
 
 header,
 footer {
-  background-color: red;
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +164,7 @@ header {
 }
 
 header .content-wrapper {
-  border: 5px solid yellow;
+  border: .1px solid yellow;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,26 +176,35 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background-color: #3a3a3a;
 }
 
 header nav {
-  background-color: green;
+  border: .1px solid green;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
-  background-color: pink;
+  border: .1px solid pink;
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+}
+
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer p {
@@ -230,26 +242,57 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
-  background-color: gray;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 /* Aside */
 
 aside {
-  background-color: lightblue;
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* Features */
 
 .features {
-  background-color: lightgreen;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -278,7 +321,7 @@ aside {
 /* Reviews */
 
 .reviews {
-  background-color: lightpink;
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -286,6 +329,7 @@ aside {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -298,7 +342,7 @@ aside {
    ===================================================================== */
 
 .mission {
-  background-color: lightsalmon;
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,7 +350,7 @@ aside {
 }
 
 .contact-section {
-  background-color: lightseagreen;
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,7 +366,7 @@ aside {
    ===================================================================== */
 
 .faq {
-  background-color: linen;
+  background-color:#527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,10 +383,15 @@ aside {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
 }
 
 /* ==========================================================================
