@@ -566,7 +566,7 @@ input[type=button] {
     min-height: 600px;
   }
 
-  .herp-area h1 {
+  .hero-area h1 {
     font-size: 3em;
     list-style: 1;
     margin: 0;
@@ -667,6 +667,21 @@ input[type=button] {
 
   .mission-content p {
     width: 45%;
+  }
+
+  .map figure {
+    position: relative;
+    padding-bottom: 45%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .contact-section .content-wrapper h2 {
@@ -782,6 +797,21 @@ input[type=button] {
   .contact-section .content-wrapper h2 {
     width: 95%;
     font-size: 3em;
+  }
+
+  .map figure {
+    position: relative;
+    padding-bottom: 38%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .contact-content h4 {
