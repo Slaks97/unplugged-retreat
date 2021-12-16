@@ -7,6 +7,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -134,7 +135,6 @@ address {
 }
 
 .content-wrapper {
-  border: 1px solid black;
   width: 90%;
   margin: 50px 0;
 }
@@ -164,7 +164,6 @@ header {
 }
 
 header .content-wrapper {
-  border: .1px solid yellow;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,10 +199,11 @@ header nav {
 }
 
 header nav ul {
-  border: .1px solid pink;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
+  padding-left: 0;
 }
 
 header nav ul li {
@@ -220,7 +220,6 @@ footer p {
 }
 
 footer .content-wrapper {
-  border: 1px solid yellow;
   width: 55%;
   margin: 50px 0;
 }
@@ -230,12 +229,14 @@ footer .contact {
 }
 
 footer .social-icons {
+  border: 1px solid yellow;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-footer .social-icons p {
+footer .social p {
+  border: 10px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -363,6 +364,22 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.map figure {
+  position: relative;
+  padding-bottom: 125%;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .contact-section {
